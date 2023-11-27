@@ -3,6 +3,10 @@ clear = document.querySelector(".clear")
 del = document.querySelector(".delete")
 equal = document.querySelector(".equal")
 dot = document.querySelector(".•")
+bin = document.querySelector(".bin")
+hex = document.querySelector(".hex")
+pORm = document.querySelector(".plus-or-minus")
+
 
 buttons = document.querySelectorAll(".disp")
 
@@ -39,6 +43,27 @@ del.addEventListener('click', function(){
 		display.textContent = display.textContent.slice(0, -1)
 	}
 })
+
+
+bin.addEventListener('click', function(){
+	//let value = display.textContent
+	//value = Number.parseInt(value)
+	display.textContent = Number.parseInt(display.textContent).toString(2)
+})
+
+
+hex.addEventListener('click', function(){
+	let value = display.textContent
+	value = Number.parseInt(value)
+	display.textContent = ""+(Number(value).toString(16)).slice(-2).toUpperCase()//value.toString(16)
+})
+
+pORm.addEventListener('click', function(){
+	
+})
+
+
+/*****************************************************************/
 
 function parse(text) {
 	let nums = []
