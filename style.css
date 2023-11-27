@@ -1,0 +1,60 @@
+body {
+	background-color: rgb(219, 217, 218, 1.0);
+
+	display: flex;
+	justify-content: center;
+}
+
+#calculator, #display, #buttons {
+	border-radius: 5%;
+}
+
+#calculator {
+	padding: 1vw;
+	background-color: rgb(222, 186, 162, 1.0);
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+/*****************Display*******************/
+
+@font-face {
+	font-family: digital;
+	src: url('assets/font/normal.ttf');
+}
+
+#display {
+	padding: 1vw;
+	background-color: rgb(36, 36, 36, 1.0);
+	border-radius: 2%;
+
+
+	color: whitesmoke;
+	font-family: digital;
+	font-size: 2vw;
+}
+
+
+
+
+
+/****************BUTTONS*******************/
+
+#buttons {
+	padding: 2vw;
+	margin-top: 1vw;
+	width: 18vw;
+	background-color: black;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+button {
+	width: 3.5vw;
+	height: 3.5vw;
+	margin: 0.2vw;
+}
