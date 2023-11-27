@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(219, 217, 218, 1.0);
+	background-color: rgb(164, 181, 191, 1.0);
 
 	display: flex;
 	justify-content: center;
@@ -11,7 +11,7 @@ body {
 
 #calculator {
 	padding: 1vw;
-	background-color: rgb(222, 186, 162, 1.0);
+	background-color: rgb(76, 67, 66, 1.0);
 
 	display: flex;
 	flex-direction: column;
@@ -27,11 +27,11 @@ body {
 
 #display {
 	padding: 1vw;
-	background-color: rgb(36, 36, 36, 1.0);
+	background-color: rgb(194, 196, 198, 1.0);
 	border-radius: 2%;
 
 
-	color: whitesmoke;
+	color: rgb(75, 72, 75, 1.0);
 	font-family: digital;
 	font-size: 2vw;
 }
@@ -46,7 +46,7 @@ body {
 	padding: 2vw;
 	margin-top: 1vw;
 	width: 18vw;
-	background-color: black;
+	background-color: rgb(87, 88, 95, 1.0);
 
 	display: flex;
 	flex-wrap: wrap;
@@ -57,4 +57,8 @@ button {
 	width: 3.5vw;
 	height: 3.5vw;
 	margin: 0.2vw;
+
+	font-family: digital;
+	font-size: 1vw;
+
 }
