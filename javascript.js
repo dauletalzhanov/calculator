@@ -7,7 +7,7 @@ bin 		= 	document.querySelector(".bin")
 hex 		=	document.querySelector(".hex")
 pORm 		= 	document.querySelector(".plus-or-minus")
 percentage 	= 	document.querySelector(".percentage")
-
+sqrt		=	document.querySelector(".sqrt")
 
 buttons 	= 	document.querySelectorAll(".disp")
 
@@ -67,6 +67,17 @@ pORm.addEventListener('click', function(){
 		value = Number.parseInt(value)
 
 	display.textContent = value * -1
+})
+
+sqrt.addEventListener('click', function(){
+	let value = display.textContent
+
+	if (value.includes("."))
+		value=Number.parseFloat(value)
+	else
+		value = Number.parseInt(value)
+
+	display.textContent = Math.sqrt(value)// ** (1/2)
 })
 
 percentage.addEventListener('click', function(){
