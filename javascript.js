@@ -1,14 +1,15 @@
-display = document.getElementById("display")
-clear = document.querySelector(".clear")
-del = document.querySelector(".delete")
-equal = document.querySelector(".equal")
-dot = document.querySelector(".•")
-bin = document.querySelector(".bin")
-hex = document.querySelector(".hex")
-pORm = document.querySelector(".plus-or-minus")
+display 	=	document.getElementById("display")
+clear 		=	document.querySelector(".clear")
+del 		=	document.querySelector(".delete")
+equal 		= 	document.querySelector(".equal")
+dot 		= 	document.querySelector(".•")
+bin 		= 	document.querySelector(".bin")
+hex 		=	document.querySelector(".hex")
+pORm 		= 	document.querySelector(".plus-or-minus")
+percentage 	= 	document.querySelector(".percentage")
 
 
-buttons = document.querySelectorAll(".disp")
+buttons 	= 	document.querySelectorAll(".disp")
 
 for (let i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener('click', function(){
@@ -44,7 +45,6 @@ del.addEventListener('click', function(){
 	}
 })
 
-
 bin.addEventListener('click', function(){
 	//let value = display.textContent
 	//value = Number.parseInt(value)
@@ -59,9 +59,27 @@ hex.addEventListener('click', function(){
 })
 
 pORm.addEventListener('click', function(){
-	
+	let value = display.textContent
+
+	if (value.includes("."))
+		value=Number.parseFloat(value)
+	else
+		value = Number.parseInt(value)
+
+	display.textContent = value * -1
 })
 
+percentage.addEventListener('click', function(){
+	let value = display.textContent
+
+	if (value.includes("."))
+		value=Number.parseFloat(value)
+	else
+		value = Number.parseInt(value)
+
+	display.textContent = value / 100
+
+})
 
 /*****************************************************************/
 

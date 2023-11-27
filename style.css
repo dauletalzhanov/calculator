@@ -29,11 +29,18 @@ body {
 	padding: 1vw;
 	background-color: rgb(194, 196, 198, 1.0);
 	border-radius: 2%;
+	width: 20vw;
+	align-self: center;
+
 
 
 	color: rgb(75, 72, 75, 1.0);
 	font-family: digital;
 	font-size: 2vw;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 
@@ -94,7 +101,7 @@ button {
 
 
 .clear:hover, .delete:hover, .hex:hover, .bin:hover, .on:hover, 
-.off:hover, .percentage:hover, .plus-or-minus:hover {
+.off:hover, .percentage:hover, .plus-or-minus:hover, .sqrt:hover {
 	background-color: orange;
 }
 
