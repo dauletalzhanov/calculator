@@ -38,8 +38,6 @@ body {
 
 
 
-
-
 /****************BUTTONS*******************/
 
 #buttons {
@@ -61,3 +59,48 @@ button {
 	font-family: digital;
 	font-size: 2vw;
 }
+
+/*			        colored buttons				 */
+
+.equal {
+	width: 7.5vw;
+	color: green;
+}
+
+.equal:hover {
+	background-color: darkseagreen;
+	color: black;
+}
+
+.disp:hover, .•:hover {
+	background-color: black;
+	color: orange;
+}
+
+.clear {
+	background-color: ;
+}
+
+.delete {
+	background-color: ;
+}
+
+.plus-or-minus:hover {
+	background-color: ;
+}
+
+.bin, .hex {
+	background-color: ;
+}
+
+
+.clear:hover, .delete:hover, .hex:hover, .bin:hover, .on:hover, 
+.off:hover, .percentage:hover, .plus-or-minus:hover {
+	background-color: orange;
+}
+
+.on, .off {
+	background-color: black;
+	color: white;
+}
+
