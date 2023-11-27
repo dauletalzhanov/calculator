@@ -45,7 +45,7 @@ body {
 #buttons {
 	padding: 2vw;
 	margin-top: 1vw;
-	width: 18vw;
+	width: 20vw;
 	background-color: rgb(87, 88, 95, 1.0);
 
 	display: flex;
@@ -59,6 +59,6 @@ button {
 	margin: 0.2vw;
 
 	font-family: digital;
-	font-size: 1vw;
+	font-size: 2vw;
 
 }
