@@ -1,4 +1,5 @@
-let rad = false
+let rad = true
+let rads = ['rad', 'deg']
 
 display 	=	document.getElementById("display")
 clear 		=	document.querySelector(".clear")
@@ -10,6 +11,13 @@ hex 		=	document.querySelector(".hex")
 pORm 		= 	document.querySelector(".plus-or-minus")
 percentage 	= 	document.querySelector(".percentage")
 sqrt		=	document.querySelector(".sqrt")
+fac			=	document.querySelector(".fac")
+log			=	document.querySelector(".log")
+
+deg			=	document.querySelector(".deg")
+sin			=	document.querySelector(".sin")
+cos			=	document.querySelector(".cos")
+tan			=	document.querySelector(".tan")
 
 buttons 	= 	document.querySelectorAll(".disp")
 
@@ -94,7 +102,87 @@ percentage.addEventListener('click', function(){
 
 })
 
-/*****************************************************************/
+log.addEventListener('click', function(){
+	display.textContent = Math.log10(Number(display.textContent))
+})
+
+
+/******************************************/
+fac.addEventListener('click', function(){
+	let value = display.textContent
+	value = Number.parseInt(value)
+
+	value = factorial(value)
+
+	display.textContent = value
+})
+
+function factorial(n){
+	if (n <= 1)
+		return 1
+	else
+		return n * factorial(n - 1)
+}
+/******************************************/
+
+deg.addEventListener('click', function(){
+	rad = !rad
+	console.log(rad)
+	deg.textContent = rads[Number(!rad)]
+
+	/*if (rad){
+		deg.addEventListener('mouseover', function(){
+			deg.style.backgroundColor = "red"
+		})
+
+		deg.addEventListener('mouseout', function(){
+			deg.style.backgroundColor = "rgb(239, 239, 239);"
+		})
+
+
+	} else {
+		deg.addEventListener('mouseover', function(){
+			deg.style.backgroundColor = "green"
+		})
+
+		deg.addEventListener('mouseout', function(){
+			deg.style.backgroundColor = "rgb(239, 239, 239);"
+		})
+	}
+	*/
+})
+
+sin.addEventListener('click', function(){
+	if (rad){
+		display.textContent = Math.sin(Number(display.textContent))
+	} else {
+		display.textContent = Math.sin((Number(display.textContent) * Math.PI)/180)
+
+
+	}
+})
+
+cos.addEventListener('click', function(){
+	if (rad){
+		display.textContent = Math.cos(Number(display.textContent))
+	} else {
+		display.textContent = Math.cos((Number(display.textContent) * Math.PI)/180)
+
+		if (Number(display.textContent) < 0.01) {
+			display.textContent = 0
+		}
+	}
+})
+
+tan.addEventListener('click', function(){
+	if (rad){
+		display.textContent = Math.tan(Number(display.textContent))
+	} else {
+		display.textContent = Math.tan((Number(display.textContent) * Math.PI)/180)
+	}
+})
+
+/****************************EQUALS**********************************/
 
 function parse(text) {
 	let nums = []
