@@ -101,7 +101,8 @@ button {
 
 
 .clear:hover, .delete:hover, .hex:hover, .bin:hover, .on:hover, 
-.off:hover, .percentage:hover, .plus-or-minus:hover, .sqrt:hover {
+.off:hover, .percentage:hover, .plus-or-minus:hover, .sqrt:hover,
+.fac:hover, .deg:hover, .sin:hover, .cos:hover, .tan:hover, .log:hover {
 	background-color: orange;
 }
 

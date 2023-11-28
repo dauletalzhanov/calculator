@@ -1,3 +1,5 @@
+let rad = false
+
 display 	=	document.getElementById("display")
 clear 		=	document.querySelector(".clear")
 del 		=	document.querySelector(".delete")
